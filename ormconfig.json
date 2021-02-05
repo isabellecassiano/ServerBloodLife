@@ -1,0 +1,23 @@
+{
+   "type": "mongodb",
+   "host": "localhost",
+   "port": 27017,
+   "database": "bloodlife",
+   "synchronize": true,
+   "logging": true,
+   "useUnifiedTopology": true,
+   "entities": [
+      "src/models/*.ts"
+   ],
+   "migrations": [
+      "src/migrations/*.ts"
+   ],
+   "subscribers": [
+      "src/subscribers/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/models",
+      "migrationsDir": "src/migrations",
+      "subscribersDir": "src/subscribers"
+   }
+}
